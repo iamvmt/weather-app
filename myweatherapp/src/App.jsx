@@ -5,7 +5,7 @@ import WeatherCard from './components/WeatherCard';
 import ForecastCard from './components/ForecastCard';
 import LoadingSpinner from './components/LoadingSpinner';
 
-const API_KEY = 'd9953001db3c60c62bf9730779c95248'; // Your actual API key
+const API_KEY = import.meta.env.VITE_API_KEY;// Your actual API key
 
 function App() {
   const [weatherData, setWeatherData] = useState(null);
